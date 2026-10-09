@@ -2,14 +2,22 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "LiveServer 5500",
-            "url": "http://127.0.0.11:5500/DWEC02/TE01/repositorio%20git/docs/index.html",
-            "webRoot": "${workspaceFolder}"
-        }
-    ]
+
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Depurar DWEC02",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.12:5500/DWEC02/TE01/repositorio%20git/docs/",
+      "webRoot": "${workspaceFolder}",
+      "pathMapping": {
+        "/DWEC02/TE01/repositorio git": "${workspaceFolder}"
+      },
+      "sourceMapPathOverrides": {
+        "./docs/*": "${workspaceFolder}/docs/*",
+        "/DWEC02/TE01/repositorio git/*": "${workspaceFolder}/*"
+      }
+    }
+  ]
 }
