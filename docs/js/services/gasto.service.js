@@ -28,7 +28,6 @@ function almacenarGastos(){
 
     // EXTRAER EL AÑO CON getFullYear()
     const anio = gasto.date.getFullYear();
-
     
     gastoAnual[anio] += gasto.precioViaje;
   });
